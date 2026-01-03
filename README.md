@@ -35,6 +35,7 @@ This approach ensures that sensitive information such as API keys, tokens, and s
 
 ## 👉 Project Video
 https://github.com/user-attachments/assets/95fd32b5-7613-47d1-af6c-fe7692681a52
+https://github.com/user-attachments/assets/f0ac4d36-9849-4988-9972-cb8da87b921e
 
 ## Overview
 

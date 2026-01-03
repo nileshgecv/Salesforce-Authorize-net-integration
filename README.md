@@ -1,7 +1,7 @@
 # Salesforce-Authorize-net-integration
 A Salesforce integration for Authorize.Net enabling secure payment processing, tokenization, and transaction handling using Apex and APIs.
 ## Here’s how you can easily connect the Authorize.net payment gateway to Salesforce:
-- Create an authorize.net developer account <a href = "https://developer.authorize.net/hello_world/sandbox.html"> Click here</a>.
+- Create an authorize.net developer account <a href = "https://developer.authorize.net/hello_world/sandbox.html" target="_blank"> Click here</a>.
 
 - After entering the above link click on ‘HELLO WORLD’ and choose ‘Get Started’ and click on ‘Create Sandbox Account’.
 
@@ -9,7 +9,7 @@ A Salesforce integration for Authorize.Net enabling secure payment processing, t
 
 ## To obtain the API Login ID and Transaction Key:
 
-- Log in to the Sandbox Account which you have just created <a href = "https://logintest.authorize.net/?cobrand=anet"> Click here</a>.
+- Log in to the Sandbox Account which you have just created <a href = "https://logintest.authorize.net/?cobrand=anet" target="_blank"> Click here</a>.
 
 - Click Account from the main toolbar.
 
@@ -79,13 +79,13 @@ Thank you for exploring this project. For feedback or discussions, feel free to 
 
 ## References
 
-<a href = "https://help.salesforce.com/s/articleView?id=sales.blng_authorizenet_setup.htm&type=5"> Configure the authorize.net Payment Gateway </a>
+<a href = "https://help.salesforce.com/s/articleView?id=sales.blng_authorizenet_setup.htm&type=5" target="_blank"> Configure the authorize.net Payment Gateway </a>
 
 ## Contact
 
-- **LinkedIn:** [View Profile](https://www.linkedin.com/in/kumarnilesh442)
-- **Email:** [nileshbnk756@gmail.com](mailto:nileshbnk756@gmail.com)
-- **Trailhead:** [Trailhead Profile](https://www.salesforce.com/trailblazer/kumarnilesh)
+- <a href="https://www.linkedin.com/in/kumarnilesh442" target="_blank">LinkedIn Profile</a>
+- <a href="mailto:nileshbnk756@gmail.com" target="_blank">Email</a>
+- <a href="https://www.salesforce.com/trailblazer/kumarnilesh" target="_blank">Trailhead Profile</a>
   
 ## Getting Started
 

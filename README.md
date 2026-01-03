@@ -1,81 +1,74 @@
-# Salesforce-Authorize-net-integration
-A Salesforce integration for Authorize.Net enabling secure payment processing, tokenization, and transaction handling using Apex and APIs.
-## Here’s how you can easily connect the Authorize.net payment gateway to Salesforce:
-- Create an authorize.net developer account <a href = "https://developer.authorize.net/hello_world/sandbox.html" target="_blank"> Click here</a>.
+# Salesforce-Authorize-Net-Integration
 
-- After entering the above link click on ‘HELLO WORLD’ and choose ‘Get Started’ and click on ‘Create Sandbox Account’.
+A Salesforce integration for Authorize.Net enabling **secure payment processing, tokenization, and transaction handling** using Apex and APIs.
 
-- Enter your details and click Submit.
+---
 
-## To obtain the API Login ID and Transaction Key:
+## Overview
 
-- Log in to the Sandbox Account which you have just created <a href = "https://logintest.authorize.net/?cobrand=anet" target="_blank"> Click here</a>.
+This integration enables secure communication between Salesforce and Authorize.Net through a **POST-based API integration**.  
 
-- Click Account from the main toolbar.
+Key highlights:
 
-- Find API Credentials & Keys.
+- All sensitive credentials are stored securely using the **API Key Manager** object.
+- Integration logic is implemented entirely in **Apex** to prevent client-side exposure.
+- Supports **internal users** and **Experience Cloud (Community) users**.
+- Follows **Salesforce security best practices**, ensuring scalability, reliability, and maintainability.
 
-- Click API Credentials & Keys.
+---
 
-## Storing Credentials in API Key Manager for POST Integrations
-For secure and maintainable integrations, API credentials should be stored in the API Key Manager object and accessed exclusively from Apex classes during POST integrations.
+## Technology Stack
 
-This approach ensures that sensitive information such as API keys, tokens, and secrets is:
+### Salesforce Platform
+- **Apex** – Handles business logic and POST callouts to Authorize.Net  
+- **API Key Manager Object** – Centralized storage of API credentials  
+- **Salesforce Sharing & Security Model** – Ensures controlled access  
 
-- Centrally managed
+### Integration & Communication
+- **REST API (POST method)** – Outbound requests to Authorize.Net  
+- **HTTP Callouts** – Managed via Apex  
 
-- Securely stored on the Salesforce platform
+### Frontend (Optional)
+- **Lightning Web Components (LWC)** – Initiates integration requests without handling credentials  
 
-- Never exposed to the client-side (LWC or Aura)
+### Security & Best Practices
+- **Server-Side Credential Management** – Prevents client-side exposure  
+- **Experience Cloud Compatible** – Community users supported securely  
+- **Governor Limits Compliance** – Optimized for Salesforce platform constraints  
 
-- During a POST integration, the Apex class retrieves the required credentials from the API Key Manager and uses them to authenticate outbound callouts to external systems.
+---
+
+## Setup Instructions
+
+### 1. Create Authorize.Net Sandbox Account
+- Sign up for a developer account: <a href="https://developer.authorize.net/hello_world/sandbox.html" target="_blank">Authorize.Net Sandbox Setup</a>  
+- Click **HELLO WORLD → Get Started → Create Sandbox Account**  
+- Enter your details and click **Submit**  
+
+### 2. Obtain API Login ID and Transaction Key
+- Log in to your Sandbox Account: <a href="https://logintest.authorize.net/?cobrand=anet" target="_blank">Authorize.Net Sandbox Login</a>  
+- Click **Account** from the main toolbar  
+- Navigate to **API Credentials & Keys**  
+- Generate your **API Login ID** and **Transaction Key**  
+
+### 3. Store Credentials Securely
+Use the **API Key Manager object** to store credentials and retrieve them only in **Apex** during POST integrations. This ensures:  
+
+- Centralized management  
+- Secure storage on Salesforce  
+- Credentials never exposed to LWC/Aura  
+- Apex retrieves credentials for outbound callouts  
+
+
 <p align="center">
  <img width="1354" height="403" alt="Image" src="https://github.com/user-attachments/assets/27583578-c279-433c-b38d-f644bf96bf03" />
 </p>
 
-## 👉 Project Video
+## Project Video
+
+Watch the integration in action:
+  
 https://github.com/user-attachments/assets/f0ac4d36-9849-4988-9972-cb8da87b921e
-
-## Overview
-
-This integration enables secure communication between Salesforce and an external system through a POST-based API integration. The solution is designed to follow Salesforce security best practices by ensuring that all sensitive credentials are stored and managed centrally using the API Key Manager object.
-
-The integration logic is implemented entirely on the server side using Apex, preventing exposure of credentials to the client layer. The solution supports both internal users and Experience Cloud (Community) users, while maintaining strict control over data access and authentication.
-
-By leveraging a structured integration flow, the system ensures reliability, scalability, and ease of maintenance for outbound API communications.
-
-## Technology Stack
-### Salesforce Platform
-
-- Apex – Handles business logic and POST callouts to external systems
-
-- API Key Manager Object – Secure storage and management of API credentials
-
-- Salesforce Sharing & Security Model – Ensures controlled access for internal and external users
-
-### Integration & Communication
-
-- REST API (POST Method) – Used for outbound communication with the external service
-
-- HTTP Callouts – Executed from Apex to transmit requests and receive responses
-
-### Frontend (Optional)
-
-- Lightning Web Components (LWC) – Initiates integration requests without handling credentials
-
-### Security & Best Practices
-
-- Server-Side Credential Management – Prevents client-side exposure
-
-- Experience Cloud Compatible – Supports community users securely
-
-- Salesforce Governor Limits Compliance – Optimized for platform constraints
-
-## Summary
-
-This integration leverages Salesforce-native technologies to deliver a secure, scalable, and maintainable POST integration, ensuring sensitive data is protected while providing seamless communication with external systems.
-
-Thank you for exploring this project. For feedback or discussions, feel free to connect with me through LinkedIn or email.
 
 ## References
 
@@ -86,16 +79,10 @@ Thank you for exploring this project. For feedback or discussions, feel free to 
 - <a href="https://www.linkedin.com/in/kumarnilesh442" target="_blank">LinkedIn Profile</a>
 - <a href="mailto:nileshbnk756@gmail.com" target="_blank">Email</a>
 - <a href="https://www.salesforce.com/trailblazer/kumarnilesh" target="_blank">Trailhead Profile</a>
-  
+
 ## Getting Started
 
-To implement the integration:
-
-1. Clone the Repository:
+### Clone the Repository
 
 ```bash
 git clone https://github.com/nileshgecv/Salesforce-Authorize-net-integration.git
-
-
-
-

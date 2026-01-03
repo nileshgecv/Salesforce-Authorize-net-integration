@@ -30,7 +30,7 @@ This approach ensures that sensitive information such as API keys, tokens, and s
 
 - During a POST integration, the Apex class retrieves the required credentials from the API Key Manager and uses them to authenticate outbound callouts to external systems.
 <p align="center">
-  <img alt="png" src="https://github.com/nileshgecv/AithNL01/blob/7ac22a063087b0fb423e20cc02d362a63bdb18b0/Screenshot%202026-01-03%20091033.png" />
+ <img width="1354" height="403" alt="Image" src="https://github.com/user-attachments/assets/27583578-c279-433c-b38d-f644bf96bf03" />
 </p>
 
 ## 👉 Project Video

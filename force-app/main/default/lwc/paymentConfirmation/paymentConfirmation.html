@@ -1,0 +1,40 @@
+<template>
+    <template if:true={isSuccess}>
+        <lightning-card>
+    <div class="receipt-container slds-p-around_medium">
+        <div class="receipt-header slds-text-align_center">
+            <h1 class="receipt-title">Payment Receipt</h1>
+        </div>
+        
+        <div class="seal-overlay">
+            <img src={sealUrl} alt="Paid Seal" class="receipt-seal-overlay" />
+        </div>
+
+        <!-- Receipt Body -->
+        <div class="receipt-body slds-m-top_medium">
+            <p><strong>Transaction Status:</strong> {responseText}</p>
+            <p><strong>Amount:</strong> ${amount}</p>
+            <p><strong>Card Type:</strong> {cardType}</p>
+            <p><strong>Account Number:</strong> {accountNumber}</p>
+            <p><strong>Invoice Number:</strong> {invoiceNumber}</p>
+            <p><strong>Transaction ID:</strong> {transactionId}</p>
+        </div>
+        <br><br><br><br><br><br><br><br>
+
+        <!-- Print Button -->
+        <div class="slds-text-align_center slds-m-top_medium">
+            <lightning-button label="Print Receipt" icon-name="utility:print" onclick={printReceipt}></lightning-button>
+        </div>
+    </div>
+</lightning-card>
+
+    </template>
+
+    <template if:false={isSuccess}>
+        <lightning-card title="Payment Status">
+            <div class="slds-p-around_medium">
+                <p class="slds-text-color_error">Payment failed or was cancelled.</p>
+            </div>
+        </lightning-card>
+    </template>
+</template>

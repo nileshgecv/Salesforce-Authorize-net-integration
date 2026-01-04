@@ -1,0 +1,13 @@
+.custom-container{
+	color : black;
+}
+.input_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* space between inputs */
+}
+.input_box lightning-input,
+.input_box lightning-combobox {
+    width: 500px; /* custom width */
+}

@@ -1,0 +1,52 @@
+.receipt-container {
+    position: relative;
+    background: #f9f9f9;
+    border-radius: 8px;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+.receipt-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2e8540;
+}
+
+/* Overlay Seal Styling */
+.seal-overlay {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+    
+}
+
+.receipt-seal-overlay {
+    height: 150px;
+    width: auto;
+}
+
+.receipt-body {
+    position: absolute;
+     left: 10%;
+    z-index: 2;
+}
+
+@media print {
+    lightning-button,
+    .slds-button {
+        display: none !important;
+    }
+
+    lightning-card {
+        box-shadow: none;
+        border: none;
+    }
+
+    .receipt-container {
+        margin: 0;
+        padding: 0;
+    }
+}
